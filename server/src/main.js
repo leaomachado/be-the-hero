@@ -10,6 +10,7 @@
 const cors = require('cors');
 const express = require('express');
 const router = require('./routes');
+const { errors } = require('celebrate');
 
 /**
  * Sets middlewares and initializes server.
@@ -22,5 +23,7 @@ app.use(cors());
 app.use(express.json());
 // Appends the routes.
 app.use(router);
+// Error handle for validators.
+app.use(errors());
 
 app.listen(3333);
