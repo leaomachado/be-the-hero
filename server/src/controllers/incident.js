@@ -98,6 +98,13 @@ module.exports = {
             .select('organization')
             .first();
 
+        // Check if incident record exists.
+        if (incident == undefined) {
+            return response.status(401).json(
+                { error: 'Operation unauthorized.' }
+            );
+        }
+
         // Check if it belongs to the current organization.
         if (incident.organization != organization) {
             return response.status(401).json(
