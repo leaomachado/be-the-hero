@@ -1,0 +1,11 @@
+/**
+ * Register page form
+ */
+
+.register-container main form .input-group {
+    display: flex;
+}
+
+.register-container main form .input-group input + input {
+    margin-left: 8px;
+}
