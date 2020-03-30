@@ -7,8 +7,9 @@
  * accompanying file LICENSE.md or copy at http://azllan.io/licenses/apsl).
  */
 
-const crypto = require('crypto');
 const persist = require('../persistence');
+
+const generateUniqueId = require('../utils/generateUniqueId');
 
 /**
  * Controller for organization requests.
@@ -43,7 +44,7 @@ module.exports = {
         const {name, email, phone, city, state} = request.body;
 
         // Generate an ID for the new organization.
-        const id = crypto.randomBytes(4).toString('HEX');
+        const id = generateUniqueId();
 
         // Insert the new organization record into the database.
         await persist('organizations').insert({

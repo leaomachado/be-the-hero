@@ -26,4 +26,4 @@ app.use(router);
 // Error handle for validators.
 app.use(errors());
 
-app.listen(3333);
+module.exports = app;
