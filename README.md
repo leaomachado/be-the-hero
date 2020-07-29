@@ -1,4 +1,4 @@
-![Be The Hero](https://gitlab.com/hleaomachado/be-the-hero/-/raw/master/client/src/assets/logo.svg)
+![Be The Hero](https://raw.githubusercontent.com/leaomachado/be-the-hero/master/client/src/assets/logo.svg)
 
 # About
 
