@@ -36,4 +36,4 @@ covered in the training and used in the project:
 
 ## License
 
-This project is open-sourced software licensed under the [APSL](LICENSE.md).
+This project is open-sourced software licensed under the [MIT License](LICENSE.md).
